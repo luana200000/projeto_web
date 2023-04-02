@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDAMENTO </title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <p>AGENDAMENTO DE CONSULTA:</p>
+    <form>
+    <div>
+    <label for="data">Data de </label>
+    <input type="date" name="date" id="data"
+        placeholder="dd-mm-yyyy" value=""
+        min="1997-01-01" max="2030-12-31">
+      </div>
+      <div>
+        <label for="time">hora:</label>
+        <input type="time" name="time" id="time">
+      </div>
+      
+<div>
+    <label for="cars">  Escolher o Médico</label>
+   <select name="médico" id="médico">
+  <option value="Maria">Maria Carvalho</option>
+  <option value="Vanessa">Vanessa Aji</option>
+  <option value="Luana">Luana Moraes</option>
+  <option value="Pedro">Pedro Leite</option>
+</select>
+</div>
+<div>
+    <label for="Tipo">  Tipo da Consulta:</label>
+   <select name="tipo" id="tipo">
+  <option value="Cardiologista">Cardiologista</option>
+  <option value="Clinico Geral">Clinico Geral</option>
+  <option value="Determatologista">Determatologista</option>
+  <option value="Padiatria">Padiatria</option>
+</select>
+</div>
+</form>
+</body>
+</html>
