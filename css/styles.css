@@ -1,0 +1,269 @@
+.titulo {
+  font-family: Arial, sans-serif;
+  color: #ff8800;
+}
+
+.texto {
+  color: rgba(36, 5, 109, 0.6);
+  margin-top: 10px;
+}
+
+a {
+  color: #ff8800;
+  text-decoration: none;
+}
+
+li {
+  color: #666666;
+  margin-left: 20px;
+}
+
+hr {
+  border-color: #dddddd;
+  margin-top: 20px;
+}
+
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  
+  
+}
+
+
+input,
+select {
+  display: block;
+  padding: 10px;
+  border: 1px solid #0099ff;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+input[type="submit"] {
+  background-color: #0099ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+input[type="reset"] {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+input:invalid {
+  border-color: 0099ff;
+}
+
+/* Define a fonte do texto nas tabelas */
+table {
+  font-family: Arial, sans-serif;
+}
+
+/* Define a cor do texto nas células da tabela */
+td {
+  color: #333;
+}
+
+/* Estiliza o cabeçalho da tabela */
+thead {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Define a cor das bordas da tabela */
+table {
+  border-collapse: collapse;
+  border: 1px solid #0099ff;
+}
+
+/* Define a cor de fundo de cada linha de tabela alternada */
+tbody tr:nth-child(even) {
+  background-color: #0099ff;
+}
+
+/* Define a largura das colunas */
+th,
+td {
+  padding: 12px;
+}
+
+th:first-child,
+td:first-child {
+  width: 25%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 50%;
+}
+
+th:last-child,
+td:last-child {
+  width: 25%;
+}
+
+/* Estiliza a linha horizontal */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #0099ff;
+  margin: 24px 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+p {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+hr {
+  margin-top: 50px;
+  border: none;
+  height: 2px;
+  background-color: #0099ff;
+}
+
+/* Style for header */
+header {
+  background-color: #0099ff;
+  padding: 10px;
+}
+
+/* Style for navigation links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style for Mr Donuts title */
+h2 {
+  color: #0099ff
+}
+
+/* Style for donut image */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style for search form */
+form {
+  text-align: center;
+  margin: 20px auto;
+}
+
+input[type=text] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: #0099ff;
+  width: 50%;
+}
+
+button[type=submit] {
+  background-color: #0099ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: #0099ff;
+}
+
+/* Style for table */
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #0099ff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
