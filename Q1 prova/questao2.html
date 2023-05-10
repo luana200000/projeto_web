@@ -1,0 +1,69 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Luana Teixeira de Moraes
+DATA: 10/05/2023
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donuts</title><!--definir o título que aparecerá na aba ou janela do navegador-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!--código adiciona um link para um arquivo CSS que 
+        contém o framework Bootstrap na versão 4.5.2. -->
+        <!-- código adiciona as referências para as bibliotecas jQuery e Bootstrap no documento HTML.-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Donuts</h2><!--título nível (h2)-->
+        <div class="row">
+            <div class="col-md-6">
+                <form id="add-donuts-form">
+                    <div class="form-group">
+                        <label for="nome-donuts">Nome do Donuts:</label>
+                        <input type="text" class="form-control" id="nome-donuts" name="nome-donuts">
+                    </div>
+                    <div class="form-group">
+                        <label for="sabor-donuts">Sabor do Donuts:</label>
+                        <input type="text" class="form-control" id="sabor-donuts" name="sabor-donuts">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <ul id="donuts-list" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function () { 
+        $("#add-donuts-form").submit(function (event) {
+            event.preventDefault();
+            var newDonuts = $("#nome-donuts").val().trim();
+            var newSabor = $("#sabor-donuts").val().trim();
+            if (newDonuts !== '' && newSabor !== '') {
+                var newRow = $("<li>");
+                newRow.addClass("list-group-item d-flex justify-content-between align-items-center");
+                newRow.append(newDonuts);
+                newRow.append('<span class="badge badge-primary badge-pill">' + newSabor + '</span>');
+                newRow.append('<button type="button" class="btn btn-danger btn-sm delete-btn">Remover</button>');
+                $("#donuts-list").append(newRow);
+                $("#nome-donuts").val('');
+                $("#sabor-donuts").val('');
+            }
+        });
+
+        $("#donuts-list").on("click", ".delete-btn", function () {
+            $(this).closest("li").remove();
+        });
+    });
+</script>
+</body>
+</html>
