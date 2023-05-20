@@ -10,8 +10,8 @@ const express = require('express');
 const app = express();
 
 // Import Controllers
-const PacienteController = require('./app/controllers/DonutsController');
-const pacienteController = new PacienteController();
+const CardapioController = require('./app/controllers/DonutsController');
+const caradapioController = new CardapioController();
 
 // Define json
 app.use(express.json());
@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 });
 
 // Pacientes
-app.get('/paciente', (req, res) => pacienteController.findAll(req, res));
-app.post('/paciente', (req, res) => pacienteController.create(req, res));
-app.get('/paciente/:id', (req, res) => pacienteController.findById(req, res));
-app.put('/paciente/:id', (req, res) => pacienteController.update(req, res));
+app.get('/cardapio', (req, res) => cardapioController.findAll(req, res));
+app.post('/cardapio', (req, res) => cardapioController.create(req, res));
+app.get('/cardapio/:id', (req, res) => cardapioController.findById(req, res));
+app.put('/cardapio/:id', (req, res) => caradpioController.update(req, res));
