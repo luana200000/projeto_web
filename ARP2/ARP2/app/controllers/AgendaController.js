@@ -1,3 +1,10 @@
+/*
+Curso: Engenharia de Software - UniEVANGÉLICA
+Disciplina: Programaçao Web 
+Dev: Luana Teixeira de Moraes - 2110867
+Data: 20/05/2023
+*/
+
 const { agenda } = require('../models');
 
 class AgendaController {
@@ -5,6 +12,7 @@ class AgendaController {
     // Inicialize as propriedades da classe, se necessário
   }
 
+  // Retorna todas as agendas
   async findAll(req, res) {
     try {
       const agendas = await Agenda.findAll();
@@ -14,6 +22,7 @@ class AgendaController {
     }
   }
 
+  // Retorna uma agenda com base no ID fornecido
   async findById(req, res) {
     try {
       const id = req.params.id;
@@ -29,6 +38,7 @@ class AgendaController {
     }
   }
 
+  // Cria uma nova agenda
   async create(req, res) {
     try {
       const newAgenda = await Agenda.create(req.body);
@@ -38,6 +48,7 @@ class AgendaController {
     }
   }
 
+  // Atualiza uma agenda com base no ID fornecido
   async update(req, res) {
     try {
       const id = req.params.id;
@@ -55,6 +66,7 @@ class AgendaController {
     }
   }
 
+  // Deleta uma agenda com base no ID fornecido
   async delete(req, res) {
     try {
       const id = req.params.id;
